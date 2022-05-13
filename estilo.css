@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background: #000 url(deportes.png);
+    background-repeat: no-repeat;
+    background-size:3050px;
+}
+.contenerdor{
+    width: 50%;
+    margin: auto;
+}
+.caja-uno{
+    background: turquoise;
+    color: black;
+    font-size: 15px 
+}
+.navegacion{
+    width: 650px;
+    margin: 30px auto;
+    background: #fff;
+}
+.navegacion ul{
+    list-style: none;
+}
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: #353535;
+    font-family: "open sans";
+    text-decoration: none;
+}
+.menu li a:hover{
+    color: black;
+    transition: all 0.3s;
+}
+.submenu1{
+    position: absolute;
+    background: red;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 2.5s;
+}
+.submenu1 li a{
+    display: block;
+    padding: 15px;
+    color: #ffff;
+    font-family: "open sans";
+    text-decoration: none;
+}
+.menu li:hover .submenu1{
+    visibility: visible;
+    opacity: 1;
+}
+

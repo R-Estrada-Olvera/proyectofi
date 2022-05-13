@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background: #000 url(you.jpg);
+    background-repeat: no-repeat;
+    background-size:1600px;
+    font-family: sans-serif;
+}
+.contenerdor{
+    width: 40%;
+    margin: auto;
+}
+.caja-uno{
+    background: turquoise;
+    color: darkred;
+    font-size: 25px 
+}
+.navegacion{
+    width: 600px;
+    margin: 30px auto;
+    background: #fff;
+}
+.navegacion ul{
+    list-style: none;
+}
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: #353535;
+    font-family: "open sans";
+    text-decoration: none;
+}
+.menu li a:hover{
+    color: black;
+    transition: all 0.3s;
+}
+.submenu1{
+    position: absolute;
+    background: red;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 2.5s;
+}
+.submenu1 li a{
+    display: block;
+    padding: 15px;
+    color: #ffff;
+    font-family: "open sans";
+    text-decoration: none;
+}
+.menu li:hover .submenu1{
+    visibility: visible;
+    opacity: 1;
+}
+
